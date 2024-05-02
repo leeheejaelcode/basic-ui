@@ -2,11 +2,27 @@
 
 body {
   font-family: "Noto Sans KR", sans-serif;
-  background-color: rgb(168, 168, 140);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* header */
+.header {
+  background-color: rgb(184, 52, 34);
+  width: 940px;
+}
+/* visual */
+.visual {
+  background-color: rgb(197, 146, 52);
+  inline-size: 940px;
+}
+/* main */
+.main {
+  background-color: rgb(171, 171, 40);
+}
+/* slogan */
+.slogan {
+  background-color: rgb(51, 181, 77);
+}
+/* footer */
+.footer {
+  background-color: rgb(44, 49, 158);
 }
