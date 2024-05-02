@@ -7,3 +7,4 @@
 - border, padding, margin (기본 박스모델)
 - 선택자 그룹핑 (선택자, 선택자 ...)
 - 변수(Custom Property)
+- 플렉스 박스 기초
