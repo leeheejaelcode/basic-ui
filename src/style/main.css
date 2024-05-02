@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 
 :root {
-  --container-size: 940px;
+  --container-size: 600px;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 .visual,
 .main,
 .slogan,
-.footer {
+.footer-inner {
   width: var(--container-size);
   margin: 0 auto;
 }
@@ -20,20 +20,36 @@ body {
 /* header */
 .header {
   background-color: rgb(184, 52, 34);
+  height: 10vh;
 }
 /* visual */
 .visual {
   background-color: rgb(197, 146, 52);
+  height: 10vh;
 }
 /* main */
 .main {
   background-color: rgb(171, 171, 40);
+  height: 60vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start; /*기본값은 flex-start*/
+  align-items: stretch; /*기본값은 stretch*/
+}
+
+.group {
+  border: 1px solid;
 }
 /* slogan */
 .slogan {
   background-color: rgb(51, 181, 77);
+  height: 10vh;
 }
 /* footer */
 .footer {
-  background-color: rgb(44, 49, 158);
+  background-color: rgb(120, 124, 205);
+}
+.footer-inner {
+  background-color: cadetblue;
+  height: 10vh;
 }
