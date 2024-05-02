@@ -1,18 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 
+:root {
+  --container-size: 940px;
+}
+
 body {
   font-family: "Noto Sans KR", sans-serif;
+}
+
+.header,
+.visual,
+.main,
+.slogan,
+.footer {
+  width: var(--container-size);
+  margin: 0 auto;
 }
 
 /* header */
 .header {
   background-color: rgb(184, 52, 34);
-  width: 940px;
 }
 /* visual */
 .visual {
   background-color: rgb(197, 146, 52);
-  inline-size: 940px;
 }
 /* main */
 .main {
