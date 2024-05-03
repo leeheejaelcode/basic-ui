@@ -24,4 +24,4 @@
 - float 요소 안에서 float 요소로 정의하기 (order 속성 흉내내기)
 - supports 사용 방법
 - border-radius
-- postion 속성 (relative, absolute)
+- position 속성 (relative, absolute)
