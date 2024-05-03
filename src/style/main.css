@@ -20,8 +20,18 @@ body {
 /* header */
 .header {
   background-color: rgb(184, 52, 34);
-  height: 10vh;
+  height: 120px;
   padding: 0 50px;
+  border-radius: 0 0 15px 15px;
+  position: relative;
+}
+
+/* 로고 */
+.logo {
+  background-color: #7e6767;
+  position: absolute;
+  top: 45px;
+  left: 60px;
 }
 /* visual */
 .visual {
@@ -31,7 +41,6 @@ body {
 /* main */
 .main {
   background-color: rgb(171, 171, 40);
-  /* border: 10px solid red; */
   display: flow-root;
   min-height: 450px;
   padding: 28px 16px 36px;
@@ -54,7 +63,6 @@ body {
 .group2 {
   width: 380px;
   background-color: silver;
-  /* border: 2px solid blue; */
 }
 
 .group3 {
@@ -66,7 +74,6 @@ body {
 .slogan {
   background-color: rgb(51, 181, 77);
   height: 10vh;
-  /* clear: both; */
 }
 /* footer */
 .footer {
@@ -83,5 +90,13 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+  }
+
+  .group:nth-child(n + 2) {
+    margin-left: 0px;
+  }
+
+  .group3 {
+    order: -1;
   }
 }
