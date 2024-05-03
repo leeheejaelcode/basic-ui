@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 
 :root {
-  --container-size: 600px;
+  --container-size: 940px;
 }
 
 body {
@@ -21,6 +21,7 @@ body {
 .header {
   background-color: rgb(184, 52, 34);
   height: 10vh;
+  padding: 0 50px;
 }
 /* visual */
 .visual {
@@ -33,12 +34,25 @@ body {
   height: 60vh;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start; /*기본값은 flex-start*/
-  align-items: stretch; /*기본값은 stretch*/
+  justify-content: space-between; /*기본축 정렬 기본값은 flex-start*/
+  align-items: stretch; /*교차축 정렬 기본값은 stretch*/
+  padding: 28px 16px 36px;
 }
 
 .group {
   border: 1px solid;
+}
+
+.group1 {
+  width: 200px;
+}
+
+.group2 {
+  width: 300px;
+}
+
+.group3 {
+  width: 100px;
 }
 /* slogan */
 .slogan {
