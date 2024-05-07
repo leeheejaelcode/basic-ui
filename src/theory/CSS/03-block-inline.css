@@ -1,0 +1,16 @@
+p {
+  background: antiquewhite;
+  border: 1px solid blue;
+  /* padding: 20px; */
+  inline-size: 600px;
+}
+
+span {
+  display: inline-block;
+  background: pink;
+  border: 1px solid blue;
+  padding: 20px;
+  /* inline요소는 padding으로 크기가 커지면 상하 크기는 차이가없고 좌우 크기는 차이가 생김 */
+  width: 150px;
+  margin: 50px 20px;
+}
