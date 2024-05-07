@@ -1,5 +1,7 @@
 # 웹카페 실습
 
+---
+
 ### 5월 2일
 
 - 스타일 시트 연결 (Normalize, Reset)
@@ -10,6 +12,8 @@
 - 선택자 그룹핑 (선택자, 선택자 ...)
 - 변수(Custom Property)
 - 플렉스 박스 기초
+
+---
 
 ### 5월 3일
 
@@ -25,3 +29,10 @@
 - supports 사용 방법
 - border-radius
 - position 속성 (relative, absolute)
+
+---
+
+### 5월 7일
+
+- CSS 명시도
+- 텍스트 링크 모드
