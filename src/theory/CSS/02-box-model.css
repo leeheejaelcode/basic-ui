@@ -1,0 +1,28 @@
+body {
+  font-size: 20px;
+}
+
+div {
+  border: 1px solid red;
+}
+
+[class^="box"] {
+  background-color: antiquewhite;
+  padding: 20px;
+}
+
+.box1 {
+  width: 500px;
+}
+
+.box2 {
+  width: 30em;
+}
+
+.box3 {
+  width: 25rem;
+}
+
+.box4 {
+  inline-size: 50vw;
+}
