@@ -1,0 +1,45 @@
+/* 단위 */
+/* 절대단위 - px */
+/* 상대단위 - em, rem, %, vw, cqw */
+
+/* html 기본 font-size는 16px */
+html {
+  font-size: 0.625em; /* 10px */
+}
+
+body {
+  font-family: "SUIT Variable", sans-serif;
+}
+
+h1 {
+  /* line-height: 1;
+  font-size: 60px;
+  font-weight: 100;
+  font-style: italic;
+  font-variant: small-caps; */
+  /* font-variant 소문자의 높이를 유지하면서 대문자로 표기하는 법 */
+
+  /* 단축 표기법 */
+  font: bold italic small-caps 60px /1 "SUIT Variable";
+  /* bold italic small-caps 순서가 바뀌어도 상관 없음 */
+  /* line-height /로 구분합니다 */
+  /* font-size와 font-family 필수 */
+}
+div {
+  font-size: 1.5em;
+}
+
+/* em - 부모에게 상속된 글자 크기의 비례 */
+/* rem root를 기준으로 상속된 글자 크기의 비례*/
+p {
+  font-size: 2em;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+/* viewport 크기 */
+@media (max-width: 767px) {
+  p {
+    font-size: 50px;
+  }
+}
