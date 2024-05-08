@@ -45,3 +45,5 @@
 - 숨김 콘텐츠
 - background 사용법
 - 가상 요소
+- 변수 활용법
+- animation 활용법
