@@ -51,11 +51,27 @@ body {
 @keyframes moveEffect {
   0% {
     font-size: 12px;
-    margin: 0;
+    translate: 0 0;
+    /* rotate: 0deg; */
   }
   100% {
     font-size: 24px;
-    margin: 75px 0 0 400px;
+    translate: 320px 75px;
+    /* rotate: 45deg; */
+  }
+}
+
+@keyframes fadeEffect {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
@@ -76,6 +92,10 @@ body {
     top: 0;
     left: 0;
     background-repeat: no-repeat;
+    animation-name: fadeEffect;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
 }
 
@@ -83,6 +103,7 @@ body {
   background-image: url(/images/ani_flower_01.png),
     url(/images/ani_flower_02.png);
   background-position: 0 -10px, 600px 10px;
+  animation-delay: 2000ms;
 }
 .visual::after {
   background-image: url(/images/ani_flower_03.png),
@@ -95,7 +116,9 @@ body {
   animation-name: moveEffect; /*animation 이름 필수속성*/
   animation-duration: 5000ms; /*animation 시간 필수속성*/
   animation-fill-mode: forwards; /*animation이 끝나고 났을때 보여지는 모습*/
-  background-color: lime;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
 }
 
 /* main */
