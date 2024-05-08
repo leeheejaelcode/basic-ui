@@ -1,0 +1,38 @@
+@keyframes size {
+  0% {
+    width: 0;
+    inline-size: 0;
+  }
+  100% {
+    width: 500px;
+    inline-size: 500px;
+  }
+}
+
+.box {
+  background-color: yellow;
+  width: 500px;
+  inline-size: 500px;
+  overflow: hidden;
+  animation: size 10s 2s forwards ease-in-out running alternate;
+  /* name과 duration은 필수속성 나머지는 없어도 되고 순서는 상관이 없음 */
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* animation-name: size;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+  animation-iteration-count: 2;
+  animation-direction: alternate; */
+  /*한번은 순방향 역방향*/
+}
+
+/* prefers-reduced-motion: reduce 개발자 도구에서
+   동작 줄이기 모드를 켰을때 실행되는 코드*/
+
+@media (prefers-reduced-motion: reduce) {
+  .box {
+    animation: none;
+  }
+}
