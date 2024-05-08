@@ -1,0 +1,38 @@
+.box {
+  background-color: lightblue;
+  width: 500px;
+  height: 100px;
+  inline-size: 500px;
+  block-size: 100px;
+  border: 20px dashed blue;
+  padding: 20px;
+  margin: 50px;
+
+  background-color: pink;
+  background-image: url(./../../images/coffee.png);
+  /* url 절대경로 하는 법 */
+  /* background-image: url(/images/coffee.png); */
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-size: 110px 83px;
+  /*cover : 가로크기에 맞춰서, contain: 세로크기에 맞춰서 */
+  background-attachment: scroll;
+  overflow: hidden;
+  /* background : color / image / repeat / position / size / attachment */
+  /* background: pink url(./../../images/coffee.png) no-repeat 20% 30%/ 110px 83px scroll; */
+}
+
+.container {
+  width: 600px;
+  height: 300px;
+  inline-size: 600px;
+  block-size: 300px;
+  border: 1px solid red;
+  /* background-color: yellow;
+  background-image: url(../../images/ani_flower_01.png),
+    url(../../images/ani_flower_02.png);
+  background-repeat: no-repeat;
+  background-position: 0 0, 200px 100px; */
+  background: url(../../images/ani_flower_01.png) no-repeat 0 0,
+    url(../../images/ani_flower_02.png) no-repeat 200px 100px yellow;
+}
