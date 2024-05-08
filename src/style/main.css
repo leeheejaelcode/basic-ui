@@ -51,21 +51,16 @@ body {
 @keyframes moveEffect {
   0% {
     font-size: 12px;
-    top: 0px;
-    inset-block-start: 0px;
-    left: 0px;
-    inset-inline-start: 0px;
+    margin: 0;
   }
   100% {
     font-size: 24px;
-    top: 75px;
-    inset-block-start: 75px;
-    left: 400px;
-    inset-inline-start: 400px;
+    margin: 75px 0 0 400px;
   }
 }
 
 .visual {
+  border: 1px solid rgba(0, 0, 0, 0);
   height: 120px;
   block-size: 120px;
   position: relative;
@@ -80,7 +75,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    border: 1px solid red;
     background-repeat: no-repeat;
   }
 }
@@ -101,8 +95,7 @@ body {
   animation-name: moveEffect; /*animation 이름 필수속성*/
   animation-duration: 5000ms; /*animation 시간 필수속성*/
   animation-fill-mode: forwards; /*animation이 끝나고 났을때 보여지는 모습*/
-  position: absolute;
-  z-index: 1;
+  background-color: lime;
 }
 
 /* main */
