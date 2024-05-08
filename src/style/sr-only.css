@@ -1,0 +1,14 @@
+.sr-only {
+  background: yellow;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  inline-size: 1px; /* width */
+  block-size: 1px; /* height */
+  /* top 좌표를 말하는 것 inset-block-start: -9999px; */
+  margin: -1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+  border-width: 0;
+}
