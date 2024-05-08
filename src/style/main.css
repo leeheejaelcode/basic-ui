@@ -4,8 +4,20 @@
   --container-size: 940px;
 }
 
+/* 기본 박스 사이징 설정 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "SUIT Variable", sans-serif;
+  background-color: #ccc;
+  background-image: url(../images/bg_flower.png),
+    linear-gradient(to bottom, #aaa 0%, #ccc 30%, #eee 50%, #fff 100%);
+  background-repeat: no-repeat;
+  /* background-position: 50%, 0, 0 0; */
 }
 
 .header,
@@ -19,7 +31,7 @@ body {
 
 /* header */
 .header {
-  background-color: rgb(184, 52, 34);
+  background-color: #fff;
   height: 120px;
   padding: 0 50px;
   border-radius: 0 0 15px 15px;
@@ -28,26 +40,52 @@ body {
 
 /* 로고 */
 .logo {
-  background-color: #7e6767;
+  /* background-color: #7e6767; */
   position: absolute;
   top: 45px;
   left: 60px;
 }
 /* visual */
 .visual {
-  background-color: rgb(197, 146, 52);
-  height: 10vh;
+  height: 120px;
+  block-size: 120px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    width: inherit;
+    inline-size: inherit;
+    height: inherit;
+    block-size: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid red;
+    background-repeat: no-repeat;
+  }
+}
+
+.visual::before {
+  background-image: url(/images/ani_flower_01.png),
+    url(/images/ani_flower_02.png);
+  background-position: 0 -10px, 600px 10px;
+}
+.visual::after {
+  background-image: url(/images/ani_flower_03.png),
+    url(/images/ani_flower_04.png);
+  background-position: 300px 0px, 800px 30px; /*x축 y축*/
 }
 /* main */
 .main {
-  background-color: rgb(171, 171, 40);
+  background-color: #fff;
   display: flow-root;
   min-height: 450px;
   padding: 28px 16px 36px;
 }
 
 .group {
-  border: 1px solid;
+  border: 1px solid red;
   float: left;
 }
 
@@ -57,30 +95,30 @@ body {
 
 .group1 {
   width: 250px;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 
 .group2 {
   width: 380px;
-  background-color: silver;
+  /* background-color: silver; */
 }
 
 .group3 {
   width: 190px;
-  background-color: hotpink;
+  /* background-color: hotpink; */
 }
 
 /* slogan */
 .slogan {
-  background-color: rgb(51, 181, 77);
+  /* background-color: rgb(51, 181, 77); */
   height: 10vh;
 }
 /* footer */
 .footer {
-  background-color: rgb(120, 124, 205);
+  /* background-color: rgb(120, 124, 205); */
 }
 .footer-inner {
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
   height: 10vh;
 }
 
