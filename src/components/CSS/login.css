@@ -14,18 +14,32 @@ body {
 
 /* input 컴포넌트 */
 .form-input {
+  --spacing: 10px;
+  --border-color: var(--gray-500);
+  --radius: 3px;
+
   display: flex;
   flex-flow: row nowrap;
-  gap: 10px;
+  gap: var(--spacing);
+  border-bottom: 1px solid transparent;
 
   input {
     flex-grow: 1;
-    border: 1px solid #aaa;
-    border-radius: 3px;
+    /* border: 1px solid var(--border-color); */
+    border-radius: var(--radius);
+    border: 0;
     padding: 1px 1px 1px 8px;
     height: 24px;
     block-size: 24px;
     width: 100%;
+  }
+
+  input:focus {
+    outline: 0;
+  }
+  /* focus-within은 부모를 선택하는 선택자 */
+  &:focus-within {
+    border-bottom-color: red;
   }
 }
 
