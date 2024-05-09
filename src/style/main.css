@@ -90,18 +90,16 @@ body {
 
 /* visual */
 
-@keyframes moveEffect {
+/* @keyframes moveEffect {
   0% {
     font-size: 12px;
     translate: 0 0;
-    /* rotate: 0deg; */
   }
   100% {
     font-size: 24px;
     translate: 320px 75px;
-    /* rotate: 45deg; */
   }
-}
+} */
 
 @keyframes fadeEffect {
   0% {
