@@ -1,0 +1,28 @@
+/* 모든 디바이스 */
+/* 모바일 디바이스 - 모바일 퍼스트 */
+body {
+  background-color: yellow;
+}
+
+/* 320px 이상 640px 이하(모바일) */
+/* breakpoint라고 불림 */
+@media (min-width: 320px) and (max-width: 640px) {
+  body {
+    background-color: orange;
+  }
+}
+
+/* 640px 이상 디바이스(태블릿) */
+/* 40em  */
+@media (min-width: 640px) and (max-width: 800px) {
+  body {
+    background-color: pink;
+  }
+}
+
+/* 1024px 이상 디바이스(데스크탑) */
+@media (min-width: 1024px) {
+  body {
+    background-color: lime;
+  }
+}
