@@ -14,7 +14,7 @@
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/components/css/login.css" />
+    <link rel="stylesheet" href="/components/CSS/login.css" />
   </head>
   <body>
     <h1>로그인 폼 예제</h1>
@@ -28,7 +28,10 @@
 
           <div class="form-input-group">
             <div role="group" class="form-input">
+              <!-- placeholder는 label과 같으면 안됨 -->
+
               <label for="userEmail">아이디</label>
+              <!-- input type="tel"이면 모바일에서 숫자키패드만 올라오게 됨 -->
               <input
                 type="email"
                 id="userEmail"
