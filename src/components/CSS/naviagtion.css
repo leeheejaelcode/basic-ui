@@ -1,0 +1,49 @@
+@import url(template.css);
+
+body {
+  margin: 50px;
+}
+
+.menu {
+  --bg-top-bottom: #e8852e;
+  --bg-center: #ed552f;
+
+  background: var(--bg-center)
+    linear-gradient(
+      to bottom,
+      var(--bg-top-bottom),
+      var(--bg-center),
+      var(--bg-top-bottom)
+    );
+  box-shadow: 0 -5px 0 0 #121212;
+  color: #000000;
+  display: flow-root;
+  padding-left: 225px;
+  padding-inline-start: 225px;
+
+  > li {
+    float: left;
+    border-left: 2px solid #fff;
+    /* border를 button주지 않는 이유는 button에다가 주게되면 border를 button으로 인식함 */
+  }
+
+  button {
+    --button-height: 60px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0 24px;
+    height: var(--button-height); /*변수처리*/
+    block-size: var(--button-height); /*변수처리*/
+    line-height: var(
+      --button-height
+    ); /* 가운데 정렬하기 위해 필요없지만 사용함*/
+    background: transparent;
+    border: 0;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+  }
+
+  ul {
+    display: none;
+  }
+}
