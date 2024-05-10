@@ -1,12 +1,24 @@
-@import url(template.css);
+@import url(/style/reset.css);
+@import url(/style/theme.css);
+@import url(/style/base.css);
 
 body {
   margin: 50px;
 }
 
+.header {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+}
+
 .menu {
-  --bg-top-bottom: #e8852e;
-  --bg-center: #ed552f;
+  --bg-top-bottom: var(--orange-100);
+  --bg-center: var(--orange-200);
 
   background: var(--bg-center)
     linear-gradient(
@@ -24,12 +36,37 @@ body {
   > li {
     float: left;
     border-left: 2px solid #fff;
+    position: relative;
     /* border를 button주지 않는 이유는 button에다가 주게되면 border를 button으로 인식함 */
   }
 
+  .is--active {
+    --font-color: var(--yellow);
+
+    button {
+      color: var(--font-color);
+
+      &::after {
+        content: "";
+        background: purple linear-gradient(to right, #000, #000);
+        display: block;
+        height: 1px;
+        block-size: 1px;
+      }
+    }
+
+    ul {
+      display: block;
+    }
+  }
+
   button {
+    /* 변수 */
+    --font-size: 1.5rem;
     --button-height: 60px;
-    font-size: 1.5rem;
+    /* 변수 */
+
+    font-size: var(--font-size);
     font-weight: 700;
     padding: 0 24px;
     height: var(--button-height); /*변수처리*/
@@ -41,9 +78,30 @@ body {
     border: 0;
     color: #fff;
     text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+    /* 
+    span {
+      display: block;
+    } */
   }
+
+  /* button[aria-expanded="true"] {
+    color: lime;
+  } */
 
   ul {
     display: none;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    background-color: antiquewhite;
+    white-space: nowrap;
+    li {
+      /* inline-block을 사용하게되면 부모요소에 white-space:nowrap를 사용하는게 실제 inline처럼 자식요소가 자기의 크기만큼 너비를 갖게됩니다. */
+      display: inline-block;
+    }
   }
+
+  /* ul[aria-hidden="false"] {
+    display: block;
+  } */
 }
