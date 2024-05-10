@@ -10,12 +10,15 @@ h1 {
   position: relative;
 
   input {
+    --input-width: 12px;
+    --input-height: 12px;
+
     position: absolute;
     appearance: none;
-    width: 12px;
-    inline-size: 12px;
-    height: 12px;
-    block-size: 12px;
+    width: var(--input-width);
+    inline-size: var(--input-width);
+    height: var(--input-height);
+    block-size: var(--input-height);
     /* 겉 모양 */
   }
 
@@ -28,11 +31,47 @@ h1 {
     background-image: url(/components/images/checked.svg);
   }
 
+  /* :focus는 요소가 포커스를 받았을 때 적용되는 의사 클래스입니다. */
   input:focus {
     outline: none;
   }
 
+  /* :focus-visible은 사용자가 키보드 등으로 요소에 포커스를 주었을 때만 적용되는 의사 클래스입니다. */
   input:focus-visible {
     outline: 2px solid red;
+    outline-offset: 4px;
+  }
+}
+
+.tooltip {
+  margin-top: 50px;
+
+  .tooltip-icon {
+    --icon-width: 20px;
+    --icon-height: 20px;
+
+    display: flex;
+    width: var(--icon-width);
+    height: var(--icon-height);
+    justify-content: center;
+    align-items: center;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    padding: 0.25em;
+    font-size: 10px;
+
+    &:hover + .tooltip-content,
+    &:focus + .tooltip-content {
+      display: block;
+    }
+  }
+
+  .tooltip-content {
+    display: none;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    color: #fff;
+    width: 15em;
   }
 }
