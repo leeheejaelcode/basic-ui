@@ -40,6 +40,14 @@ body {
     /* border를 button주지 않는 이유는 button에다가 주게되면 border를 button으로 인식함 */
   }
 
+  > li:nth-child(-n + 3) ul {
+    left: 0;
+  }
+
+  > li:nth-child(n + 4) ul {
+    right: 0;
+  }
+
   .is--active {
     --font-color: var(--yellow);
 
@@ -56,7 +64,7 @@ body {
     }
 
     ul {
-      display: block;
+      display: flex;
     }
   }
 
@@ -92,12 +100,18 @@ body {
     display: none;
     position: absolute;
     top: 65px;
-    left: 0px;
-    background-color: antiquewhite;
-    white-space: nowrap;
     li {
       /* inline-block을 사용하게되면 부모요소에 white-space:nowrap를 사용하는게 실제 inline처럼 자식요소가 자기의 크기만큼 너비를 갖게됩니다. */
       display: inline-block;
+      white-space: nowrap;
+      margin-right: 4px;
+      margin-inline-end: 4px;
+    }
+
+    a {
+      display: flex;
+      padding: 8px;
+      gap: 8px;
     }
   }
 
