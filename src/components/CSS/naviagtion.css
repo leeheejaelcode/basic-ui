@@ -69,16 +69,14 @@ body {
   }
 
   button {
-    /* 변수 */
     --font-size: 1.5rem;
     --button-height: 60px;
-    /* 변수 */
 
     font-size: var(--font-size);
     font-weight: 700;
     padding: 0 24px;
-    height: var(--button-height); /*변수처리*/
-    block-size: var(--button-height); /*변수처리*/
+    height: var(--button-height);
+    block-size: var(--button-height);
     line-height: var(
       --button-height
     ); /* 가운데 정렬하기 위해 필요없지만 사용함*/
@@ -86,10 +84,6 @@ body {
     border: 0;
     color: #fff;
     text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
-    /* 
-    span {
-      display: block;
-    } */
   }
 
   /* button[aria-expanded="true"] {
