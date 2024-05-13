@@ -30,7 +30,32 @@
         <div class="navigation container-flude">navigation</div>
       </div>
       <div class="wrapper container-fluid">
-        <div class="main orange">main</div>
+        <div class="main">
+          <div class="pagination" role="navigation" aria-label="페이지네이션">
+            <button
+              class="button button-prev"
+              type="button"
+              aria-label="이전 페이지"
+            >
+              <span class="fas fa-angle-left" aria-hidden="true"></span>
+            </button>
+            <!-- 페이지네이션 컴포넌트 -->
+            <div>
+              <a href="/">1</a>
+              <a href="/">2</a>
+              <a href="/" class="is-selected" aria-current="page">3</a>
+              <a href="/">4</a>
+              <a href="/">5</a>
+            </div>
+            <button
+              class="button button-next"
+              type="button"
+              aria-label="다음 페이지"
+            >
+              <span class="fas fa-angle-right" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
         <div class="sidebar gray">sidebar</div>
       </div>
       <div class="skyblue">
