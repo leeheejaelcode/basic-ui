@@ -1,0 +1,67 @@
+@import url(/theory/css/default.css);
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+
+  /* div {
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #000;
+  } */
+}
+
+/* .header,
+.navigation,
+.wrapper,
+.footer {
+  width: 80%;
+  margin: 0 auto;
+} */
+
+.container-flude {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-fixed {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 70px;
+  block-size: 70px;
+}
+
+.navigation {
+  height: 50px;
+  block-size: 50px;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 3.125rem;
+  /* gap은 가급적으로 rem을 사용하는게 좋답니당 */
+  flex: 1 0 0;
+  overflow: auto;
+}
+
+/* .main과 .sidebar를 그룹핑 */
+.main {
+  flex-basis: 200px;
+  flex-grow: 6;
+  flex-shrink: 0;
+}
+
+.sidebar {
+  flex-basis: 200px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.footer {
+  height: 50px;
+  block-size: 50px;
+}
