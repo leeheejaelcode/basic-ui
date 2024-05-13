@@ -20,8 +20,12 @@
 } */
 
 .container-flude {
-  width: 80%;
+  /* width: 80%;
+  max-width: 800px;
+  min-width: 500px; */
   margin: 0 auto;
+  width: clamp(500px, 80%, 800px);
+  /* clamp(min, basis, max)  */
 }
 
 .container-fixed {
