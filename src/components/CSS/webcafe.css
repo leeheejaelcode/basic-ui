@@ -2,6 +2,10 @@
 @import url(/style/base.css);
 @import url(/style/reset.css);
 
+body {
+  margin-top: 50px;
+}
+
 /* 웹카페 반응형 레이아웃 */
 .container {
   min-height: 100vh;
@@ -26,13 +30,19 @@
   }
 }
 
+.header {
+  display: flex;
+  justify-content: end;
+}
+
 /* 햄버거 버튼 */
 .burger-button {
+  margin: 100px;
   background-color: red;
   border: 0;
   padding: 0;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   position: relative;
 
   span {
@@ -42,6 +52,7 @@
     height: 20%;
     border-radius: 20px;
     background-color: #fff;
+    transition: ease all 0.3s;
   }
 
   .burger-bar-top {
@@ -56,6 +67,26 @@
   .burger-bar-bottom {
     top: 100%;
     translate: 0% -100%;
+  }
+}
+/* is-active */
+.burger-button.is-active {
+  overflow: hidden;
+
+  .burger-bar-top,
+  .burger-bar-bottom {
+    top: 50%;
+    translate: 0% -50%;
+  }
+
+  .burger-bar-top {
+    rotate: 3turn;
+  }
+  .burger-bar-middle {
+    translate: -100% -50%;
+  }
+  .burger-bar-bottom {
+    rotate: -45deg;
   }
 }
 
@@ -73,8 +104,8 @@
   transition-duration: 2000ms, 2000ms;
   transition-delay: 0ms, 4000ms;
   transition-timing-function: ease-in-out; */
-  transition: translate 2000ms 0ms ease-in-out,
-    background-color 2000ms 2000ms ease-in-out;
+  transition: translate 400ms 0ms ease-in-out,
+    background-color 400ms 2000ms ease-in-out;
   &.is-active {
     translate: 0 0;
     background-color: purple;
