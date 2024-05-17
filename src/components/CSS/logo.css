@@ -1,45 +1,12 @@
 /* 로고 */
 .logo {
-  background-color: blue;
   background-image: image-set(
     url(/images/webcafe-logo.png) 1x,
     url(/images/webcafe-logo@2x.png) 2x
   );
   background-size: cover;
   background-repeat: no-repeat;
-  width: 20%;
-  /* height: 50px; */
+  width: 12.75rem;
+  /* 이미지 가로, 세로 비율 */
   aspect-ratio: 1/0.28921568627450983;
-  /* 이 값은 59/204 값 */
-}
-
-/* 추천 서적 - book */
-.main {
-  background-color: transparent;
-}
-
-.book {
-  /* background-color: transparent;
-  background-image: url(./../../apple/apple_watch.jpeg);
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  -webkit-mask-image: url(./../../svg/star.svg);
-  mask-image: url(./../../svg/star.svg);
-  -webkit-mask-repeat: url(./../../svg/star.svg);
-  mask-repeat: no-repeat;
-  -webkit-mask-position: 50% 50%;
-  mask-position: 50% 50%; */
-}
-
-.twitter {
-  font-size: 100px;
-  display: flex;
-  font-weight: 900;
-  justify-content: center;
-  align-items: center;
-  background-image: url(./../../apple/apple_watch.jpeg);
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  background-clip: text;
-  color: transparent;
 }
