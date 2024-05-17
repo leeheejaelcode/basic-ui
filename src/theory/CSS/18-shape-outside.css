@@ -1,0 +1,17 @@
+@import url(/components/css/template.css);
+
+figure {
+  margin: 0;
+  width: 20%;
+  float: left;
+  shape-outside: circle();
+  padding: 2em;
+
+  img {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 0;
+  }
+}
